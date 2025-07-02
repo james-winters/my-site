@@ -1,80 +1,78 @@
 body{
-  background-color: #F8F7F5;
+  background-color: #d2d9e7;
   margin:0;
   padding: 0;
 }
 h1{
-  color: #5b9357;
+  color: #0167c7;
   font-family: "Courier";
   margin-left:25px;
+  font-size: clamp(20pt, 2vw, 30pt);
 }
 h2{
-  color: #426c93;
+  color: #9717a8;
   font-family: "Courier";
   margin-left:25px;
+  font-size: clamp(14pt, 2vw, 20pt);
 }
 h3{
-  color:#975169;
+  color:#672b78;
   font-family: "Courier";
   margin-left:25px;
-  font-size: 16pt;
+  font-size: clamp(12pt, 2vw, 18pt);
 }
 tr:hover{
-  background-color:#86a8a0;
+  background-color:#82ffff;
 }
 a{
-  color:#6c94be;
+  color:#9717a8;
 }
 a:hover{
-  color:#c37991;
+  color:#d822f0;
 }
 
-ul.navbar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar {
   overflow: hidden;
-  background-color: #d5cfc3;
-  position:fixed;
-  width:100%;
+  background-color: #a3abb9;
+  position: fixed;
+  top:0;
+  width: 100%;
 }
-li.navbar{
-  display:inline-block;
-  padding:10px 20px;
-  margin:0;
-  width:2.5%;
+
+.navbar a {
+  float: left;
+  font-size: clamp(9pt, 1.5vw, 11pt);
+  color: black;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-family: "Verdana";
 }
-ul.navbar li a{
-  color:black;
-  text-decoration:none;
-  padding:10px 20px;
+
+.navbar a:hover{
+  background-color: #00ffff;
 }
-ul.navbar li a:active{
-  background-color: #5b9357;
-}
-ul.navbar li a:hover{
-  background-color:#c37991;
-}
+
 
 hr{
     border-style: dotted none none;
     border-width:5px;
-    color:#975169;
+    color:#1f3a84;
     width:50%;
 }
 
 div{
-  font-size: 12pt;
+  font-size: clamp(8pt, 2vw, 13pt);
   margin-left:0;
 }
 p{
-  font-size: 13pt;
+  font-size: clamp(8pt, 2vw, 13pt);
   font-family: "Verdana";
   margin-left:25px;
   width:95%;
 }
 li{
-  font-size:13pt;
+  font-size:clamp(8pt, 2vw, 13pt);
   font-family: "Verdana";
   margin-left:25px;
   width:95%;
@@ -87,9 +85,10 @@ li{
   text-align:center;
 }
 table{
-  font-size:13pt;
+  font-size: clamp(8pt, 2vw, 13pt);
   width:95%;
   margin-left:25px;
+  font-family: "Verdana";
 }
 .skills{
   display:inline-block;
@@ -99,13 +98,11 @@ table{
 }
 
 th{
-  text-decoration:underline;
-  color: #975169;
-  font-family: "Verdana";
+  font-weight: bold;
+  color: #672b78;
+  font-size: clamp(10pt, 2vw, 15pt);
 }
-tr{
-  font-family: "Verdana";
-}
+
 .xspace{
   padding-bottom:10px;
 }
@@ -123,4 +120,202 @@ input{
 img{
   font-family:"Verdana";
   font-size:12pt;
+}
+
+.addie{
+  color: #672b78;
+  font-family: "Courier";
+  margin-left:25px;
+  padding-right: 20px;
+  font-size: 50pt;
+  font-weight:bold;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.container-text{
+  font-size: clamp(8pt, 2vw, 16pt);
+  font-family: "Verdana";
+  padding: 2%;
+  margin: 0;
+  text-align: center;
+}
+
+.container-text-head{
+  font-size: clamp(10pt, 2vw, 24pt);
+  font-family: "Courier";
+  padding: 4%;
+  padding-top: 10%;
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+
+.block-bottom-right {
+  position: absolute;
+  bottom: 11%;
+  right: 11.2%;
+  background-color: #00ffff;
+  color: #000000;
+  width: 21.5%;
+  height: 38%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.block-bottom-left {
+  position: absolute;
+  bottom: 11%;
+  left: 11.2%;
+  background-color: #00ffff;
+  color: #000000;
+  width: 21.5%;
+  height: 38%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.block-top-right {
+  position: absolute;
+  top: 7.2%;
+  right: 11.2%;
+  background-color: #00ffff;
+  color: #000000;
+  width: 21.5%;
+  height: 38%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.block-top-left {
+  position: absolute;
+  top: 7.2%;
+  left: 11.2%;
+  background-color: #00ffff;
+  color: #000000;
+  width: 21.5%;
+  height: 38%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.block-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00ffff;
+  color: #000000;
+  width: 21.5%;
+  height: 25%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.block-right {
+  position: absolute;
+  top: 13.8%;
+  right: 11.2%;
+  background-color: #00ffff;
+  color: #000000;
+  width: 21.5%;
+  height: 68%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.block-left {
+  position: absolute;
+  top: 13.8%;
+  left: 11.2%;
+  background-color: #00ffff;
+  color: #000000;
+  width: 21.5%;
+  height: 68%;
+  border-radius: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.welcome-h2{
+  font-size: clamp(10pt, 2.5vw, 28pt);
+  font-family: "Courier";
+  padding-top: 4%;
+  padding-bottom: 8%;;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+.welcome-h3{
+  font-size: clamp(8pt, 2vw, 22pt);
+  font-family: "Courier";
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+.welcome-text{
+  font-size: clamp(8pt, 2vw, 16pt);
+  font-family: "Verdana";
+  padding: 3%;
+  padding-top: 2%;
+  margin: 0;
+  text-align: left;
+}
+.block-welcome {
+  position: absolute;
+  top: 5%;
+  left: 11.2%;
+  /*background-color: #00ffff;*/
+  color: white;
+  width: 78%;
+  height: 77%;
+
+}
+.welcome-list{
+  margin: 0;
+  font-size: clamp(8pt, 2vw, 16pt);
+  font-family: "Verdana";
+  padding: 3%;
+  padding-top: 0;
+  text-align: left
+}
+
+.spacer{
+  width: 100%;
+  height: 40px;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 900px) {
+  .container-text-head{
+  font-size: clamp(8pt, 1.1vw, 20pt);
+  }
+  .container-text{
+  font-size: clamp(5pt, 1vw, 14pt);
+  }
+  .welcome-h2{
+  font-size: clamp(8pt, 1.2vw, 24pt);
+  }
+  .welcome-h3{
+  font-size: clamp(7pt, 1.1vw, 20pt);
+  }
+  .welcome-text{
+  font-size: clamp(5pt, 1vw, 14pt);
+  }
+  .welcome-list{
+  font-size: clamp(5pt, 1vw, 14pt);
+  }
+  #profile{
+    width: 150px;
+  }
 }
